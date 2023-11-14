@@ -1,4 +1,24 @@
-# ESP32 BLE Keyboard library
+# Fork of T-vK/ESP32-BLE-Keyboard adding EJECT key functionality
+
+Issue:  When connecting a BLE device to an Apple iPad, IOS disables the virtual onscreen keyboard for text entry.  I am building a
+  BLE foot switch (https://github.com/cwgstreet/flipTurn) page turner to pair with an iPad music app where I also need to  
+  be able to enter onscreen text (search songs etc.) when necessary, so need to be able to bring up the onscreen virtual keyboard
+  while the device is connected.
+
+Solution:  Sending the KEY_MEDIA_EJECT keypress toggles the onscreen keyboard visability.  The code fix (substituting
+  KEY_MEDIA_EJECT for the KEY_MEDIA_MUTE in the official library is discussed in the repository Issues but not implemented.  This 
+  fork implements this change for my project.
+
+Solution reference (Issue #3):  https://github.com/T-vK/ESP32-BLE-Keyboard/issues/3
+
+=======================================================================================================
+
+<br>
+<br>
+
+
+
+## ESP32 BLE Keyboard library
 
 This library allows you to make the ESP32 act as a Bluetooth Keyboard and control what it does.  
 You might also be interested in:
