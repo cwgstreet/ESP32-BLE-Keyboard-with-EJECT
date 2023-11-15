@@ -15,7 +15,7 @@
 Solution reference (Issue #3):  https://github.com/T-vK/ESP32-BLE-Keyboard/issues/3
 
 ---
-<br>
+
 <br>
 
 
