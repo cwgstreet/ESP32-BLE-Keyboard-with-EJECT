@@ -11,8 +11,7 @@ Solution:  Sending the KEY_MEDIA_EJECT keypress toggles the onscreen keyboard vi
 
 Solution reference (Issue #3):  https://github.com/T-vK/ESP32-BLE-Keyboard/issues/3
 
-=======================================================================================================
-
+---
 <br>
 <br>
 
