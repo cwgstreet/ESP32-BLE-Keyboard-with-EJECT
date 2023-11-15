@@ -1,13 +1,16 @@
 # Fork of T-vK/ESP32-BLE-Keyboard adding EJECT key functionality
 
-Issue:  When connecting a BLE device to an Apple iPad, IOS disables the virtual onscreen keyboard for text entry.  I am building a
-  BLE foot switch (https://github.com/cwgstreet/flipTurn) page turner to pair with an iPad music app where I also need to  
-  be able to enter onscreen text (search songs etc.) when necessary, so need to be able to bring up the onscreen virtual keyboard
-  while the device is connected.
+### Issue:  
+  When connecting a BLE device to an Apple iPad, IOS disables the virtual onscreen keyboard for text entry.  I am building a
+  BLE foot switch page turner ([Flip Turn](https://github.com/cwgstreet/flipTurn)) to pair with an iPad music app.  
+  
+  Once paired, I need to be able to enter onscreen text to do tasks like search for song name. As such, I need override this, 
+  to bring up the onscreen virtual keyboard while the bluetooth device is connected.
 
-Solution:  Sending the KEY_MEDIA_EJECT keypress toggles the onscreen keyboard visability.  The code fix (substituting
-  KEY_MEDIA_EJECT for the KEY_MEDIA_MUTE in the official library is discussed in the repository Issues but not implemented.  This 
-  fork implements this change for my project.
+### Solution:  
+  In IOS, sending the KEY_MEDIA_EJECT keypress toggles the onscreen keyboard visability.  The code fix requires substituting
+  KEY_MEDIA_EJECT for the KEY_MEDIA_MUTE in the official library.  This solution is discussed in the original repository Issue #3
+  but not implemented.  This fork implements this coding change for use in my project.
 
 Solution reference (Issue #3):  https://github.com/T-vK/ESP32-BLE-Keyboard/issues/3
 
